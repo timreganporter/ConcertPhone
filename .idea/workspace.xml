@@ -24,19 +24,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="twilio_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="twilio_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/twilio_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/twilio/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="36" selection-start="137" selection-end="137" vertical-scroll-proportion="0.119205296">
+            <state line="38" column="0" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.038709678">
               <folding />
             </state>
           </provider>
@@ -620,16 +611,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/twilio_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/twilio/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.0">
+        <state line="4" column="50" selection-start="216" selection-end="216" vertical-scroll-proportion="0.1589404">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/twilio/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/twilio_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="36" selection-start="137" selection-end="137" vertical-scroll-proportion="0.119205296">
+        <state line="38" column="0" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.038709678">
           <folding />
         </state>
       </provider>
