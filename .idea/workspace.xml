@@ -36,7 +36,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/twilio/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="59" selection-start="394" selection-end="394" vertical-scroll-proportion="0.3576159">
+            <state line="3" column="36" selection-start="137" selection-end="137" vertical-scroll-proportion="0.119205296">
               <folding />
             </state>
           </provider>
@@ -629,7 +629,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/twilio/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="59" selection-start="394" selection-end="394" vertical-scroll-proportion="0.3576159">
+        <state line="3" column="36" selection-start="137" selection-end="137" vertical-scroll-proportion="0.119205296">
           <folding />
         </state>
       </provider>
