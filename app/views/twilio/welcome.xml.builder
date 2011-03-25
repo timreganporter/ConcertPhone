@@ -1,7 +1,7 @@
 xml.instruct!
 xml.Response do
   if ( flash.blank? )
-    xml.Say "Welcome to Concert Phone! Powered by Twilio and SongKick."
+    xml.Play "http://concertphone.timreganporter.com/welcome.mp3"
   else flash.each do |name, msg|
       xml.Say msg
     end

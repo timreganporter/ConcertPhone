@@ -5,10 +5,10 @@ require "twiliolib"
 ACCOUNT_SID = "AC699a4edd9c7cc6f193d6ac762ee8d78a"
 ACCOUNT_TOKEN = "205119a7eef0444bcfbf6cebb7cfeb06"
 API_VERSION = "2010-04-01"
-BASE_URL = "http://71.204.24.247:8080/twilio"
+BASE_URL = "http://concertphone.timreganporter.com/twilio"
 CALLER_ID = "4155992671"
 #CALLER_PIN only needed to send using sandbox number.
-CALLER_PIN = "3174-2244"
+#CALLER_PIN = "3174-2244"
 
 # Yahoo PlaceFinder API for looking up longitude and latitude by zip
 ZIP_LOOKUP_URL = "http://where.yahooapis.com/geocode"
@@ -71,7 +71,7 @@ class TwilioController < ApplicationController
     d = {
         'From'  => CALLER_ID,
         'To'    => params[:Digits],
-        'Body'  => "#{ @concert['performance'][0]['displayName'] } Concert Info:\n#{@concert['uri']}\n#{CALLER_PIN}"
+        'Body'  => "#{ @concert['performance'][0]['displayName'] } Concert Info:\n#{@concert['uri']}"
     }
     begin
       account = Twilio::RestAccount.new(ACCOUNT_SID, ACCOUNT_TOKEN)
