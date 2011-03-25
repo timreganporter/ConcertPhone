@@ -16,4 +16,10 @@ module ApplicationHelper
     end
   end
 
+  def format_date(date)
+    if !date.blank?
+      date.to_s.gsub(/2011-/, '')
+    end
+  end
+
 end

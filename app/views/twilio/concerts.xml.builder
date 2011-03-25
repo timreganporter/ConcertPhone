@@ -12,7 +12,7 @@ xml.Response do
       xml.Say "#{concert['performance'][0]['displayName']}. Press #{index + 1} for more information."
       xml.Pause
     end
-    xml.Say "Press 0 to lookup another city."
+    xml.Say "Press 0 to lookup another city or 00 to repeat these concert listings."
   end
 end
 

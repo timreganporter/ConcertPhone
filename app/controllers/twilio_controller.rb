@@ -50,6 +50,9 @@ class TwilioController < ApplicationController
     if params[:Digits] == '0'
       redirect_to :action => :welcome, :format => :xml
       return
+    elsif params[:Digits] == '00'
+      redirect_to :action => :concerts, :format => :xml
+      return
     end
     @gather_action = BASE_URL + "/tickets.xml"
     # TODO: error handling if concert or session not found
