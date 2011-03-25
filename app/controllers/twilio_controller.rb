@@ -76,6 +76,7 @@ class TwilioController < ApplicationController
     begin
       account = Twilio::RestAccount.new(ACCOUNT_SID, ACCOUNT_TOKEN)
       resp = account.request("/#{API_VERSION}/Accounts/#{ACCOUNT_SID}/SMS/Messages", "POST", d)
+      logger.info "code: #{resp.code}, body: #{resp.body}"
       resp.error! unless resp.kind_of? Net::HTTPSuccess
     rescue StandardError => e
       flash[:error] = "There's been a problem"
