@@ -6,7 +6,7 @@ ACCOUNT_SID = "AC699a4edd9c7cc6f193d6ac762ee8d78a"
 ACCOUNT_TOKEN = "205119a7eef0444bcfbf6cebb7cfeb06"
 API_VERSION = "2010-04-01"
 BASE_URL = "http://concertphone.timreganporter.com/twilio"
-CALLER_ID = "4155992671"
+CALLER_ID = "(650) 262-4730" #"4155992671"
 #CALLER_PIN only needed to send using sandbox number.
 #CALLER_PIN = "3174-2244"
 
@@ -81,7 +81,7 @@ class TwilioController < ApplicationController
     rescue StandardError => e
       flash[:error] = "There's been a problem"
       logger.debug "Error: #{ e }, d: #{ d } "
-      redirect_to :action => :welcome
+      redirect_to :action => :welcome, :format => :xml
       return
     end
     flash[:notice] = "Text message sent. Thank you."

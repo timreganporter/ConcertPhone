@@ -3,13 +3,9 @@ xml.instruct!
 xml.Response do
   xml.Say(
     "#{@concert['performance'][0]['displayName']} is playing on
-    #{@concert['start']['date']}, at #{@concert['venue']['displayName']}
-    #{ if !@concert['location']['city'].blank?
-      ", in #{@concert['location']['city'].gsub(/, (\w)*$/, '')}"
-    end}
-    #{ if !@concert['start']['time'].blank?
-        ", starting at #{ format_time(@concert['start']['time'])}"
-    end}.",
+    #{@concert['start']['date'].gsub(/2011/,'')}, at #{@concert['venue']['displayName']}
+    #{ format_city(@concert['location']['city']) }
+    #{ format_time(@concert['start']['time']) }",
     :voice => "woman")
   xml.Pause
   xml.Gather( :action => @gather_action, :numDigits => 10 ) do
