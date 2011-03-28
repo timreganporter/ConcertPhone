@@ -18,7 +18,9 @@ module ApplicationHelper
 
   def format_date(date)
     if !date.blank?
-      date.to_s.gsub(/2011-/, '')
+      date = date.to_s.gsub(/2011-/, '')
+      date = date.gsub(/^\d\d/) { |s| Date::MONTHNAMES[s.to_i] }
+      date.gsub(/\-/, ' ')
     end
   end
 
