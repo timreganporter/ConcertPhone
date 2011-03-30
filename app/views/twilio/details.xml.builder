@@ -1,4 +1,3 @@
-# hacktastic, redo
 xml.instruct!
 xml.Response do
   xml.Say(
